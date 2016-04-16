@@ -233,6 +233,10 @@
           document.querySelector(".active-frame-item").classList.remove("active-frame-item");
         }
         this.classList.add("active-frame-item");
+        var framesTool = document.getElementById("menu-frames-tool");
+        framesTool.parentNode.removeChild(framesTool);
+        this.appendChild(framesTool);
+        framesTool.classList.remove("hide-menu-frames-tool");
       });
     });
   });

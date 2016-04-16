@@ -130,32 +130,27 @@ canvas {
 }
 #menu-frames .active-frame-item {
   background-color: red;
+  width: 200px;
 }
 #menu-frames-tool {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+  background-color: black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   list-style-type: none;
   padding: 5px;
   color: white;
   width: 100px;
   text-align: center;
-}
-#menu-frames-tool:before {
-  content: "";
-  position: relative;
-  bottom: -36px;
-  left: 50%;
-  margin-left: -9px;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 9px 9px 0 9px;
-  border-color: #000 transparent transparent transparent;
-  z-index: 0;
+  float: right;
+  height: 100%;
+  box-sizing: border-box;
 }
 #menu-frames-tool button {
-  display: inline-block;
   background: none;
   border: none;
   color: white;
+  margin: auto 0;
+}
+.hide-menu-frames-tool {
+  display: none;
 }
