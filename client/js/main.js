@@ -225,6 +225,16 @@
     document.getElementById("btn-frame-prev").addEventListener("click", clickPrevFrame);
     document.getElementById("btn-frame-next").addEventListener("click", clickNextFrame);
     document.getElementById("btn-play").addEventListener("click", clickPlay);
+    var thumbnailElem = document.getElementById("menu-frames");
+    Array.prototype.forEach.call(thumbnailElem.childNodes, function(frameNode) {
+      frameNode.addEventListener("click", function() {
+        // クリックした時に呼び出される
+        if (document.querySelector(".active-frame-item") !== null) {
+          document.querySelector(".active-frame-item").classList.remove("active-frame-item");
+        }
+        this.classList.add("active-frame-item");
+      });
+    });
   });
   function clickColorItem() {
     canvas.setColor(this.style.backgroundColor);

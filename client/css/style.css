@@ -128,3 +128,34 @@ canvas {
   width: 100px;
   height: 60px;
 }
+#menu-frames .active-frame-item {
+  background-color: red;
+}
+#menu-frames-tool {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  list-style-type: none;
+  padding: 5px;
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+#menu-frames-tool:before {
+  content: "";
+  position: relative;
+  bottom: -36px;
+  left: 50%;
+  margin-left: -9px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 9px 9px 0 9px;
+  border-color: #000 transparent transparent transparent;
+  z-index: 0;
+}
+#menu-frames-tool button {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: white;
+}
