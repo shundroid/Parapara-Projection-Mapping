@@ -111,3 +111,18 @@ canvas {
 .current-canvas {
   display: block;
 }
+#menu-frames {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  height: 300px;
+}
+#menu-frames li {
+  background-color: gray;
+  border-radius: 10px;
+  margin: 5px;
+  width: 100px;
+  height: 60px;
+}
